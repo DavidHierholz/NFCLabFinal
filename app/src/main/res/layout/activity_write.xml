@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="0.5">
+
+    <EditText
+        android:id="@+id/editText"
+        android:hint="This content will be written to the NFC Tag"
+        android:inputType="textMultiLine"
+        android:gravity="top|start"
+        android:minLines="6"
+        android:lines="8"
+        android:maxLines="20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/writeToTagButton"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClickWriteToTagButton"
+        android:text="Write to Tag" />
+</LinearLayout>
